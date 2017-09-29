@@ -1,0 +1,19 @@
+{
+    "server" : {
+        "port" : "19082",
+        "handlers" : [
+            { "name" : "log", "path" : "./handlers/log", "enabled" : false },
+            { "name" : "rfid", "path" : "./handlers/rfid", "enabled" : true }
+        ]
+    },
+    "client" : {
+        "host" : "127.0.0.1",
+        "port" : "19082"
+    },
+    "db" : {
+        "main" : {
+            "type" : "mongo",
+            "connectionString" : "mongodb://localhost/main"
+        }
+    }
+}
